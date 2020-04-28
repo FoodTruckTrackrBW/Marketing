@@ -126,6 +126,86 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  letter-spacing: 10px;
+}
+h2 {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+}
+h3 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 10%;
+}
+h4 {
+  font-size: 1.5rem;
+  letter-spacing: 2.5px;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+a {
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  text-decoration: none;
+  color: #ECECEC;
+}
+#signIn a {
+  font-size: 1.5rem;
+  letter-spacing: 2.5px;
+}
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #080808;
+}
+header h1 {
+  color: #FFAB5C;
+  font-weight: bold;
+  padding-bottom: 0.5%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-right: 5%;
+  padding-bottom: 0.7%;
+}
+.Logo {
+  margin-top: 0.5%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+#signIn {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 10;
+  right: 0;
+  width: 18%;
+  color: #ECECEC;
+}
 .CTA Img {
   width: 30%;
 }

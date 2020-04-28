@@ -258,3 +258,39 @@ footer .footerNav {
   border: solid #FFAB5C 3px;
   background-color: #080808;
 }
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 230vh;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  background-color: #ECECEC;
+}
+.aboutContainer #subHeading {
+  position: absolute;
+  font-weight: bold;
+  margin-top: 5%;
+}
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30vw;
+  height: 50vh;
+  border-radius: 20px;
+  border: solid #FFAB5C 3px;
+  background-color: #080808;
+}
+.Card img {
+  border-radius: 50%;
+  height: 20vh;
+  width: 12vw;
+}
+.Card h3 {
+  color: #ECECEC;
+}
+.Card p {
+  color: #ECECEC;
+  padding-bottom: 50px;
+}

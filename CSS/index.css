@@ -181,6 +181,27 @@ header h1 {
   font-weight: bold;
   padding-bottom: 0.5%;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  header h4 {
+    font-size: 1rem;
+  }
+}
 .headerNav {
   display: flex;
   justify-content: space-between;
@@ -188,10 +209,31 @@ header h1 {
   margin-right: 5%;
   padding-bottom: 0.7%;
 }
+@media (max-width: 500px) {
+  .headerNav {
+    width: 100vw;
+    margin: 0 auto;
+    padding-left: 1%;
+  }
+}
+.headerNav a {
+  display: flex;
+  align-items: flex-end;
+  font-size: 2rem;
+}
+.headerNav a:hover {
+  color: #FFAB5C;
+}
 .Logo {
   margin-top: 0.5%;
   margin-left: 1%;
   margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .Logo {
+    margin: 0 auto;
+    margin-top: 10%;
+  }
 }
 #signIn {
   display: flex;
@@ -202,9 +244,37 @@ header h1 {
   width: 18%;
   color: #ECECEC;
 }
+@media (min-width: 1920px) {
+  #signIn {
+    width: 13%;
+  }
+}
+@media (max-width: 500px) {
+  #signIn {
+    width: 45%;
+  }
+}
+@media (max-width: 375px) {
+  #signIn {
+    width: 50%;
+  }
+}
+@media (max-width: 320px) {
+  #signIn {
+    width: 60%;
+  }
+}
 #signIn a {
   font-size: 1.5rem;
   letter-spacing: 2.5px;
+}
+@media (max-width: 500px) {
+  #signIn a {
+    font-size: 1rem;
+  }
+}
+#signIn a:hover {
+  color: #FFAB5C;
 }
 footer {
   display: flex;
@@ -223,17 +293,53 @@ footer .footerNav {
   justify-content: space-between;
   width: 40%;
 }
+footer .footerNav a:hover {
+  color: #FFAB5C;
+}
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  footer .footerNav {
+    width: 100vw;
+    margin: 0 auto;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
 .Container {
   display: flex;
   align-items: center;
   height: 80vh;
   background-color: #ECECEC;
 }
+@media (max-width: 500px) {
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 140vh;
+  }
+}
 .CTA Img {
   border-radius: 50%;
   height: 70%;
   width: 60%;
   margin-left: 18%;
+}
+@media (max-width: 500px) {
+  .CTA Img {
+    height: 50vh;
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+.CTA Img:hover {
+  opacity: 0.7;
 }
 .CTAInfo {
   display: flex;
@@ -242,6 +348,15 @@ footer .footerNav {
   height: 60%;
   width: 120%;
   margin-right: 15%;
+}
+@media (max-width: 500px) {
+  .CTAInfo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 50%;
+    width: 95%;
+  }
 }
 .CTAInfo .Button {
   display: flex;
@@ -258,6 +373,17 @@ footer .footerNav {
   border: solid #FFAB5C 3px;
   background-color: #080808;
 }
+@media (max-width: 500px) {
+  .CTAInfo #CTAButton {
+    width: 40vw;
+    height: 5vh;
+  }
+}
+.CTAInfo #CTAButton:hover {
+  background-color: #FFAB5C;
+  border: solid #080808 3px;
+  color: #080808;
+}
 .aboutContainer {
   display: flex;
   flex-wrap: wrap;
@@ -271,7 +397,7 @@ footer .footerNav {
   font-weight: bold;
   margin-top: 5%;
 }
-.Card {
+.aboutContainer .Card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -279,18 +405,22 @@ footer .footerNav {
   width: 30vw;
   height: 50vh;
   border-radius: 20px;
-  border: solid #FFAB5C 3px;
   background-color: #080808;
 }
-.Card img {
+.aboutContainer .Card img {
   border-radius: 50%;
   height: 20vh;
   width: 12vw;
+  border: solid #ECECEC 2px;
 }
-.Card h3 {
+.aboutContainer .Card h3 {
   color: #ECECEC;
 }
-.Card p {
+.aboutContainer .Card p {
   color: #ECECEC;
-  padding-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.aboutContainer .Card:hover {
+  opacity: 0.7;
 }

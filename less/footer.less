@@ -1,19 +1,17 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 10vh;
-    background-color: #080808;
+    .footerStyle();
 
-    p {
-        font-size: 1.2rem;
-        color: #ECECEC;
-    }// this closes the footer p tag
+    @media @large-phone {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
     .footerNav {
-        display: flex;
-        justify-content: space-between;
-        width: 40%;
-    }// this closes the footerNav
+        @media @large-phone {
+            width: 100vw;
+            margin: 0 auto;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+    }
 }// this closes the footer

@@ -195,6 +195,19 @@ header h1 {
     font-size: 2.5rem;
     margin: 0 auto;
     text-align: center;
+    padding-left: 8px;
+  }
+}
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 2rem;
+    padding-left: 8px;
+  }
+}
+@media (max-width: 320px) {
+  header h1 {
+    font-size: 1.5rem;
+    padding-left: 6px;
   }
 }
 @media (max-width: 500px) {
@@ -220,6 +233,16 @@ header h1 {
   display: flex;
   align-items: flex-end;
   font-size: 2rem;
+}
+@media (max-width: 375px) {
+  .headerNav a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .headerNav a {
+    font-size: 1.2rem;
+  }
 }
 .headerNav a:hover {
   color: #FFAB5C;
@@ -310,6 +333,16 @@ footer .footerNav a:hover {
     padding-right: 1%;
   }
 }
+@media (max-width: 375px) {
+  footer .footerNav a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  footer .footerNav a {
+    font-size: 1.2rem;
+  }
+}
 .Container {
   display: flex;
   align-items: center;
@@ -392,10 +425,47 @@ footer .footerNav a:hover {
   align-content: space-evenly;
   background-color: #ECECEC;
 }
+@media (max-width: 500px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800vh;
+  }
+}
 .aboutContainer #subHeading {
   position: absolute;
   font-weight: bold;
   margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .aboutContainer #subHeading {
+    position: absolute;
+    top: 290;
+    left: 90;
+  }
+}
+@media (max-width: 320px) {
+  .aboutContainer #subHeading {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .aboutContainer #subHeading h2 {
+    position: absolute;
+    left: 5;
+    width: 55vw;
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .aboutContainer #subHeading h2 {
+    position: absolute;
+    top: 10;
+    left: -10;
+    width: 55vw;
+    font-size: 2rem;
+  }
 }
 .aboutContainer .Card {
   display: flex;
@@ -420,6 +490,17 @@ footer .footerNav a:hover {
   color: #ECECEC;
   margin-right: 20px;
   margin-left: 20px;
+}
+@media (max-width: 500px) {
+  .aboutContainer .Card {
+    width: 80vw;
+    height: 70vh;
+  }
+}
+@media (max-width: 500px) {
+  .aboutContainer .Card Img {
+    width: 30vw;
+  }
 }
 .aboutContainer .Card:hover {
   opacity: 0.7;

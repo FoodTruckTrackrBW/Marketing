@@ -378,6 +378,7 @@ footer .footerNav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   height: 60%;
   width: 120%;
   margin-right: 15%;
@@ -397,7 +398,7 @@ footer .footerNav a:hover {
   height: 10%;
 }
 .CTAInfo #CTAButton {
-  width: 35%;
+  width: 10vw;
   font-weight: bold;
   font-size: 1.5rem;
   color: white;

@@ -430,6 +430,25 @@ footer .footerNav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-content: center;
+    height: 800vh;
+  }
+}
+@media (max-width: 375px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    height: 800vh;
+  }
+}
+@media (max-width: 320px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
     height: 800vh;
   }
 }
@@ -441,7 +460,7 @@ footer .footerNav a:hover {
 @media (max-width: 500px) {
   .aboutContainer #subHeading {
     position: absolute;
-    top: 290;
+    top: 350;
     left: 90;
   }
 }
